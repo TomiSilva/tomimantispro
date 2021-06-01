@@ -274,7 +274,7 @@ iframe {
 
     }
     .galeria {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         margin-top: 20%;
     }
@@ -295,7 +295,7 @@ iframe {
 
     .modal img {
         height: 16vh;
-        margin-right: 23px;
+        
     }
 }
 
