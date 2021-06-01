@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+}
+
+body{
+    font-family: 'Palanquin', sans-serif;
+    color:rgb(19, 12, 58);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnugd1XRC_VC4kP7kx7UiWI65AUeukhDcnEPeyw3SbYeguHMTNYhP4vauzID5hU4mwe4M&usqp=CAU);
+    
+}
+
+
+/*ESPECIFICACIONES GENERALES*/
+
+.headergeneral {
+    
+    width: auto;
+    margin: 20px;
+    padding-bottom: 20px
+    
+}
+
+.navtotal {
+    position: static;
+    width: 100%;
+    height: 9vh;
+    padding-bottom: 5px;
+    border-radius: 0px 0px 50px 50px;
+    border-bottom: 1px solid rgb(255 210 239);
+    box-shadow: 0px 10px 10px rgb(255 137 210 / 64%);
+    background-color: rgb(255 137 210)
+}
+
+.ultotal {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ultotal li {
+    padding: 11px 45px 13px;
+    border-left: 2px groove white;
+    height: 9vh;
+   
+}
+
+.ultotal li a {
+   color: #130c3a;
+}
+
+.ultotal li:hover{
+       
+    box-shadow: 0px 10px 10px rgb(255 210 235 / 56%);
+    
+    font-size: 20px; 
+}
+
+.ultotal li a:hover {
+    color: white;
+    
+}
+
+
+.star {
+    color: rgb(19, 12, 58);
+    position: absolute;
+    font-size: 26px;
+    top: 5%;
+    left: 4%;
+}
+
+
+.star:hover {
+    color:white;
+    font-size: 30px;
+    
+    
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 9vh;
+    margin-bottom: 10px;
+    border-radius: 50px 50px 0px 0px;
+    border-bottom: 1px solid rgb(255 210 239);
+    box-shadow: 0px 10px 10px rgb(255 137 210 / 64%);
+    background-color: rgb(255 137 210);
+}
+.listafooter {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    bottom: -9px;
+    left: 17px;
+    margin:4px;
+}
+
+footer i {
+    font-size: 30px;
+    margin: 0px 20px 0px 10px;
+    color: rgb(19, 12, 58);
+}
+
+footer i:hover {
+    color:white;
+    font-size: 35px;
+}
+
+
+/* FIN!! DE ESPECIFICACIONES GENERALES */
+
+
+/*CÓMIC*/ 
+
+#articlecomic {
+    padding-bottom: 10%;
+}
+
+#nomennescio{
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(255, 137, 210);
+    font-size: 30px;
+    margin: 20px;
+    padding-bottom:2%;
+    border-bottom: 1px solid #ff89d2;
+
+}
+
+.parrafo {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ff89d25c;
+}
+
+iframe {
+    padding: 20px;
+}
+
+
+
+    
+
+
+/* FIN!! COMIC */
+
+
+
+
+/* ILUSTRACION */
+
+
+#mainilustraciones {
+    height: 100vh;
+}
+#instrucciones {
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(255, 137, 210);
+    font-size: 30px;
+    margin:20px;
+    border-bottom: 1px solid #ff89d2;
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 9% 0% 20% 0%;
+}
+
+.galeria ul {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+}
+.galeria .img-card {
+    overflow:hidden;
+    margin: -1px;
+    cursor:pointer;
+
+}
+.galeria img{
+    object-fit: cover;
+    transition: 0.5s;
+    height: 26vh;
+
+}
+.galeria img:hover{
+    transform: scale(1.5) rotate(30deg);
+}
+
+
+/* modal */
+
+.modal {
+    display:none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(253, 77, 253, 0.616);
+}
+
+.modal img {
+    height: 23vh;
+    object-fit: cover;
+    cursor:pointer;
+}
+
+.listaimg {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+#mimodalimg {
+    width: auto;
+    height: 66%;
+    display: block;
+    margin: auto;
+    max-width: 700px;
+    margin-top: 10px;
+}
+
+.modal .caption-text {
+    margin:auto;
+    display:block;
+    width: 80%;
+    max-width: 700px;
+    text-align:center;
+    color:white;
+    padding:10px;
+}
+.listaimg ul {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.closeimg {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    font-size: 30px;
+    cursor:pointer;
+}
+
+/* animacion zoom */
+@keyframes zoom{
+    from{transform:scale(0);}
+    to{transform:scale(1)}
+}
+
+/*MEDIA QUERYS ILUSTRACION */
+
+@media (max-width:768px) {
+    #instrucciones {
+        margin:8%;
+        font-size:25px;
+
+    }
+    .galeria {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20%;
+    }
+
+    .galeria img {
+        height: 16vh;
+    }
+
+    .galeria ul {
+        flex-direction: column;
+        align-items: flex-start;
+   
+    }
+
+    #mimodalimg {
+        height: 35%;
+    }
+
+    .modal img {
+        height: 16vh;
+        margin-right: 23px;
+    }
+}
+
+/* FIN!!! MEDIAQUERYS ILUSTRACION */
+
+/* FIN!!!! ILUSTRACION */
+
+
+
+
+/* POEMAS */
+
+.articlepoemas h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+    margin: 20px;
+    color: rgb(255, 137, 210);
+    padding-bottom: 2%;
+    border-bottom: 1px solid #ff89d2;
+}
+.sectionpoemas h2 {
+    font-size: 25px;
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(255, 137, 210);
+}
+
+.sectionpoemas p {
+    padding: 20px;
+    background-color: #ff89d25c;
+    font-size: 14px;
+}
+
+.sectionpoemas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-bottom: 5%;
+    
+}
+
+/* MEDIA QUERYS */
+
+
+
+@media (max-width: 768px ) {
+    .sectionpoemas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10% 7% 25%;
+    }
+
+    .articlepoemas h1 {
+        margin: 4% 7%;
+    }
+}
+/* FIN!! POEMAS */
+
+/* MENU GRAL HAMBURGUESA */
+
+.homegral{
+    display:none;
+}
+
+#menuburguergral {
+    display:none;
+    background:none;
+}
+
+@media(max-width:768px){
+
+    .star {
+        display:none;
+    }
+
+    .navtotal{
+        left: 80%;
+        width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:fixed;
+    }
+    
+    .ultotal{
+       display: none;
+   }
+
+   .ultotal li a {
+       font-size: 20px;
+   }
+   
+   /* MENU HAMBURGUESA GRAL */
+   
+   #menuburguergral {
+    color: #ffffff;
+    display: block;
+    margin: 5%;
+   }
+
+   .mobilebotongral{
+       font-size: 30px;
+   }
+
+   #closemobilegral {
+       display: none;
+   }
+   
+ 
+   body.mobile-menugral-active {
+       overflow: hidden;
+   }
+   
+  
+   body.mobile-menugral-active #openmobilegral {
+       display: none;   
+   }
+   body.mobile-menugral-active #closemobilegral {
+    
+       
+        color: white;
+        display: block;
+        position: fixed;
+        top: 5%;
+        right: 8%;
+        z-index: 1;
+     
+   }
+
+   body.mobile-menugral-active .ultotal {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    background: #ff89d2;
+   }
+
+   body.mobile-menugral-active .navtotal{
+       left:0px;
+       right:0px;
+       top:0;
+   }
+
+   body.mobile-menugral-active footer{
+       display:none;
+   }
+
+   body.mobile-menugral-active .ligeneral{
+       font-family: 'Architects Daughter';    
+       padding: 2vw 9vw;
+       border-bottom: 1px solid white;
+       border-right:0px;
+       border-left:0px;
+       color: white;
+       font-size: 20px;
+   }
+
+   body.mobile-menugral-active .homegral{
+       display:block;
+   }
+
+}
+
+/* FINN MENU HAMBURGUESA GRAL */
