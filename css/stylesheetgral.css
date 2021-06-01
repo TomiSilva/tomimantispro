@@ -100,9 +100,9 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    bottom: -9px;
-    left: 17px;
-    margin:4px;
+    bottom: -19%;
+    left: 3%;
+    margin: 0%;
 }
 
 footer i {

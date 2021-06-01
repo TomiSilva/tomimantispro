@@ -88,6 +88,9 @@ body{
     color: rgb(255, 137, 210);
     font-size: 20px;
     box-shadow: 0px 10px 10px rgb(255 210 235 / 56%) ;
+    bottom: -19%;
+    left: 3%;
+    margin: 0%;
 }
 
 a{
