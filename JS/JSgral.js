@@ -28,6 +28,8 @@ navResponsiveGral();
 
 // galeria de imagenes
 
+
+
 let modal = document.querySelector('.modal');
 let images = document.querySelectorAll('.galeria img');
 let modalImg = document.querySelector('#mimodalimg');
@@ -46,8 +48,10 @@ images.forEach((images) => {
 imgBox.forEach(img => img.addEventListener('click', imgLightbox));
 
 function imgLightbox (event) {
+     
     modalImg.src = event.target.src; // cambio el src del modal para que coincida con el src de la imagen que clickee de la lista de imagenes que está dentro del modal
 }
+
 
 closeImg.addEventListener('click', () => {
     modal.style.display= 'none';
