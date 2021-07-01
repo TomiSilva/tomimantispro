@@ -227,7 +227,7 @@ a:hover {
 
 
 /* MAIN */
-@media (max-width:600px) {
+@media (min-width:300px) {
     #sectionaboutme{
         display: flex;
         flex-direction: column; 
@@ -249,6 +249,7 @@ a:hover {
         background-color: rgb(247 246 246);
         width: 100%;
         height: 100%;
+        margin: 20px;
         border-radius: 50px;
         display: flex;
         flex-direction: column;
@@ -296,7 +297,7 @@ a:hover {
     }
     
     p strong {
-        font-size: 8vw;
+        font-size: 16px;
     }
     
     #cruzcheck{
@@ -335,11 +336,40 @@ a:hover {
         border-radius: 50px;
         background-color: #ff89d25c;
     }
+    
+footer {
+    position: fixed;
+    width:auto;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    bottom: 0;
+    border-radius: 50px 50px 0px 0px;
+    border-bottom: 1px solid rgb(255 210 239);
+    box-shadow: 0px 10px 10px rgb(255 137 210 / 64%);
+    background-color: rgb(255 137 210);
+}
+.listafooter {
+    position: relative;
+    bottom: -2px;
+    left: 1px;
+}
+
+footer i {
+    font-size: 30px;
+    margin: 13px;
+}
+
+ 
+footer i:hover {
+    color:white;
+    font-size: 35px;
+}
   
     
 }
-
-
 
 @media(min-width:600px){
 
@@ -349,21 +379,19 @@ a:hover {
 
     #sectionaboutme{
         display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1%;
   
     }
     
     #aboutme{
         font-size: 6vw;
-        font-family: 'Architects Daughter', cursive;
-        color: rgb(255, 137, 210);
-    }
+           }
 
     #swipe{
         background-color: rgb(247 246 246);
-        width: 35%;
+        width: 50%;
         height: 100%;
         border-radius: 50px;
         display: flex;
@@ -407,10 +435,24 @@ a:hover {
     
     } 
     .parrafoaboutme {
-        padding: 20px;
+        align-items: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    
+    width: 50%;
+    height: auto;
+    margin: 20px;
     border-radius: 50px;
-    background-color: #ff89d25c;
+    background-color: #ff89d25c;   
+    font-size: 2vw;
     } 
+
+    .parrafoaboutme p {
+        margin: 6%;
+    }
+
+
     p strong {
         font-size: 2vw;
     }
@@ -439,20 +481,38 @@ a:hover {
         color: rgb(19 12 58);
         
     }
+
+    #ancla-subir {
+        width: 93%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 13vw;
+    }
+
+    #ancla-subir p {
+        border: 8px solid #ff89d2;
+        border-radius: 50px;
+        background: white;
+        padding: 3vw;
+    }
     
     .subir {
-        position: relative;
-    font-size: 5vw;
-    bottom: -36vw;
-    left: 34vw;
-    background: white;
-    padding: 11px;
-    border-radius: 55px;
-    border: 23px solid #ff89d2;
+        margin: -14px;
+        font-size: 4vw;
+    
+        display: block;
     }
     
 
+   
 }
+/* 
+
+
+
 
 @media(min-width:1024px){
 
@@ -555,6 +615,7 @@ a:hover {
     
     }
     .parrafoaboutme {
+    
         padding: 20px;
     border-radius: 50px;
     background-color: #ff89d25c;
@@ -577,7 +638,7 @@ a:hover {
     border: 1vw solid #ff89d2;
     }
     
-}
+} */
 /* FIN!!! DE MEDIA QUERYS MAIN */
 
 /*FIN!! ACÁ EL MEDIA QUERYS HOME*/
@@ -587,34 +648,3 @@ a:hover {
 
 /* FOOTER */
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 9vh;
-    margin-bottom: 10px;
-    border-radius: 50px 50px 0px 0px;
-    border-bottom: 1px solid rgb(255 210 239);
-    box-shadow: 0px 10px 10px rgb(255 137 210 / 64%);
-    background-color: rgb(255 137 210);
-}
-.listafooter {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    bottom: -9px;
-    left: 17px;
-}
-
-footer i {
-    font-size: 30px;
-    margin: 0px 20px 0px 10px;
-    color: rgb(19, 12, 58);
-}
-
-footer i:hover {
-    color:white;
-    font-size: 35px;
-}
