@@ -145,19 +145,9 @@ footer i:hover {
 iframe {
     padding: 20px;
 }
-
-
-
-    
-
-
+ 
 /* FIN!! COMIC */
-
-
-
-
 /* ILUSTRACION */
-
 
 #mainilustraciones {
     height: 100vh;
@@ -199,9 +189,7 @@ iframe {
     transform: scale(1.5) rotate(30deg);
 }
 
-
 /* modal */
-
 .modal {
     display:none;
     position:fixed;
@@ -309,10 +297,6 @@ iframe {
 /* FIN!!! MEDIAQUERYS ILUSTRACION */
 
 /* FIN!!!! ILUSTRACION */
-
-
-
-
 /* POEMAS */
 
 .articlepoemas h1 {
@@ -342,11 +326,7 @@ iframe {
     padding-bottom: 5%;
     
 }
-
 /* MEDIA QUERYS */
-
-
-
 @media (max-width: 768px ) {
     .sectionpoemas {
         display: flex;
@@ -360,7 +340,6 @@ iframe {
     }
 }
 /* FIN!! POEMAS */
-
 /* MENU GRAL HAMBURGUESA */
 
 .homegral{
